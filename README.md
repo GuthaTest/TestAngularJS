@@ -1,2 +1,2 @@
 # TestAngularJS
-Angular JS Testing
+Angular JS Testing, using plunker
