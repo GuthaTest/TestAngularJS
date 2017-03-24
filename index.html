@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+     <link data-require="bootstrap-css@~3.1.1" data-semver="3.1.1" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <script data-require="angular.js@*" data-semver="1.3.1" src="//code.angularjs.org/1.3.1/angular.js"></script>
+    <script data-require="ui-bootstrap@*" data-semver="0.11.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.min.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    <p>Hello {{name}}!</p>
+     <tabset>
+      <tab heading="Tab 1">
+        <button class="btn btn-success" ng-click="$parent.tabs[2].select()">Go to Tab 3</button>
+      </tab>
+      <tab heading="Tab 2">
+        <p>Tab 2 contents</p>
+      </tab>
+      <tab heading="Tab 3">
+        <button class="btn btn-danger" ng-click="$parent.tabs[0].select()">Back to Tab 1</button>
+      </tab>
+    </tabset>
+  </body>
+
+</html>
